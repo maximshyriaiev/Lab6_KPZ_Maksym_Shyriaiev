@@ -1,0 +1,37 @@
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.exe.config
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.exe
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.pdb
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csprojAssemblyReference.cache
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.Properties.Resources.resources
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.GenerateResource.cache
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.CoreCompileInputs.cache
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.exe
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.pdb
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.MainForm.resources
+C:\Users\Артём\source\repos\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.ArcanoidMenu.resources
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.exe.config
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.exe
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.pdb
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.ArcanoidMenu.resources
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.MainForm.resources
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.Properties.Resources.resources
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.GenerateResource.cache
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.CoreCompileInputs.cache
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.exe
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.pdb
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.LevelConstructor.resources
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.AssemblyReference.cache
+D:\Учеба\2 курс\ООП\Курсовая работа\Курсовой проект ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.SuggestedBindingRedirects.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.exe.config
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.exe
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\bin\Debug\Курсовой проект ООП.pdb
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.AssemblyReference.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.SuggestedBindingRedirects.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.ArcanoidMenu.resources
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.MainForm.resources
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.LevelConstructor.resources
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой_проект_ООП.Properties.Resources.resources
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.GenerateResource.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.csproj.CoreCompileInputs.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.exe
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\Курсовой проект ООП\obj\Debug\Курсовой проект ООП.pdb

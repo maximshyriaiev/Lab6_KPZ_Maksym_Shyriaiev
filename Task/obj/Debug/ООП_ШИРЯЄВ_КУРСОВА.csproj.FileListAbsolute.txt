@@ -1,0 +1,25 @@
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\bin\Debug\Курсовой проект ООП.exe.config
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\bin\Debug\Курсовой проект ООП.exe
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\bin\Debug\Курсовой проект ООП.pdb
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\ООП_ШИРЯЄВ_КУРСОВА.csproj.AssemblyReference.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\ООП_ШИРЯЄВ_КУРСОВА.csproj.SuggestedBindingRedirects.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\Курсовой_проект_ООП.Properties.Resources.resources
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\ООП_ШИРЯЄВ_КУРСОВА.csproj.GenerateResource.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\ООП_ШИРЯЄВ_КУРСОВА.csproj.CoreCompileInputs.cache
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\Курсовой проект ООП.exe
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\Курсовой проект ООП.pdb
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\ООП_ШИРЯЄВ.ArcanoidMenu.resources
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\ООП_ШИРЯЄВ.MainForm.resources
+C:\курсач\Arcanoid-OOP\Арканоид-ООП\ООП_ШИРЯЄВ_КУРСОВА\obj\Debug\ООП_ШИРЯЄВ.LevelConstructor.resources
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.exe.config
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.exe
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.pdb
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ_КУРСОВА.csproj.AssemblyReference.cache
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.ArcanoidMenu.resources
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.MainForm.resources
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.LevelConstructor.resources
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой_проект_ООП.Properties.Resources.resources
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ_КУРСОВА.csproj.GenerateResource.cache
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ_КУРСОВА.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой проект ООП.exe
+C:\Users\Maxim\Desktop\ЛАБЫ 2 СЕМЕСТР\2\КПЗ\Lab_6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой проект ООП.pdb
