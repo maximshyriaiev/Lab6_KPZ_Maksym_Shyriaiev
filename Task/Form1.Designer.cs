@@ -168,7 +168,7 @@ namespace ООП_ШИРЯЄВ
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1052, 951);
+            this.ClientSize = new System.Drawing.Size(1052, 950);
             this.Controls.Add(this.Continue);
             this.Controls.Add(this.Msg);
             this.Controls.Add(this.GamePlatform);

@@ -1,0 +1,13 @@
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.exe.config
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.exe
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.pdb
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ЛАБ6 Ширяєв.csproj.AssemblyReference.cache
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ЛАБ6 Ширяєв.csproj.SuggestedBindingRedirects.cache
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.ArcanoidMenu.resources
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.MainForm.resources
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.LevelConstructor.resources
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой_проект_ООП.Properties.Resources.resources
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ЛАБ6 Ширяєв.csproj.GenerateResource.cache
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ЛАБ6 Ширяєв.csproj.CoreCompileInputs.cache
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой проект ООП.exe
+C:\Users\Maks\Desktop\лаби\4 семестр\Конструювання програмного забезпечення (2022-2023)\code rewiew\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой проект ООП.pdb

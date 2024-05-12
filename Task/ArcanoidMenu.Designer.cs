@@ -47,10 +47,10 @@ namespace ООП_ШИРЯЄВ
             this.Play.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Play.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Play.ForeColor = System.Drawing.Color.White;
-            this.Play.Location = new System.Drawing.Point(164, 157);
-            this.Play.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Play.Location = new System.Drawing.Point(146, 126);
+            this.Play.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Play.Name = "Play";
-            this.Play.Size = new System.Drawing.Size(300, 77);
+            this.Play.Size = new System.Drawing.Size(267, 62);
             this.Play.TabIndex = 0;
             this.Play.Text = "Play";
             this.Play.UseVisualStyleBackColor = false;
@@ -64,10 +64,10 @@ namespace ООП_ШИРЯЄВ
             this.GameRules.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GameRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.GameRules.ForeColor = System.Drawing.Color.White;
-            this.GameRules.Location = new System.Drawing.Point(164, 243);
-            this.GameRules.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GameRules.Location = new System.Drawing.Point(146, 194);
+            this.GameRules.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GameRules.Name = "GameRules";
-            this.GameRules.Size = new System.Drawing.Size(300, 77);
+            this.GameRules.Size = new System.Drawing.Size(267, 62);
             this.GameRules.TabIndex = 3;
             this.GameRules.Text = "Rules";
             this.GameRules.UseVisualStyleBackColor = false;
@@ -81,10 +81,10 @@ namespace ООП_ШИРЯЄВ
             this.MenuExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MenuExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MenuExit.ForeColor = System.Drawing.Color.White;
-            this.MenuExit.Location = new System.Drawing.Point(164, 417);
-            this.MenuExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MenuExit.Location = new System.Drawing.Point(146, 334);
+            this.MenuExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MenuExit.Name = "MenuExit";
-            this.MenuExit.Size = new System.Drawing.Size(300, 77);
+            this.MenuExit.Size = new System.Drawing.Size(267, 62);
             this.MenuExit.TabIndex = 4;
             this.MenuExit.Text = "Exit";
             this.MenuExit.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@ namespace ООП_ШИРЯЄВ
             this.Ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Ok.ForeColor = System.Drawing.Color.White;
-            this.Ok.Location = new System.Drawing.Point(171, 580);
-            this.Ok.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Ok.Location = new System.Drawing.Point(152, 464);
+            this.Ok.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Ok.Name = "Ok";
-            this.Ok.Size = new System.Drawing.Size(300, 77);
+            this.Ok.Size = new System.Drawing.Size(267, 62);
             this.Ok.TabIndex = 6;
             this.Ok.Text = "Оk";
             this.Ok.UseVisualStyleBackColor = false;
@@ -116,10 +116,10 @@ namespace ООП_ШИРЯЄВ
             this.Constructor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Constructor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Constructor.ForeColor = System.Drawing.Color.White;
-            this.Constructor.Location = new System.Drawing.Point(164, 331);
-            this.Constructor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Constructor.Location = new System.Drawing.Point(146, 265);
+            this.Constructor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Constructor.Name = "Constructor";
-            this.Constructor.Size = new System.Drawing.Size(300, 77);
+            this.Constructor.Size = new System.Drawing.Size(267, 62);
             this.Constructor.TabIndex = 8;
             this.Constructor.Text = "Constructor";
             this.Constructor.UseVisualStyleBackColor = false;
@@ -128,20 +128,20 @@ namespace ООП_ШИРЯЄВ
             // Rules
             // 
             this.Rules.Image = ((System.Drawing.Image)(resources.GetObject("Rules.Image")));
-            this.Rules.Location = new System.Drawing.Point(28, 177);
-            this.Rules.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Rules.Location = new System.Drawing.Point(25, 142);
+            this.Rules.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Rules.Name = "Rules";
-            this.Rules.Size = new System.Drawing.Size(554, 394);
+            this.Rules.Size = new System.Drawing.Size(492, 315);
             this.Rules.TabIndex = 9;
             this.Rules.TabStop = false;
             this.Rules.Visible = false;
             // 
             // ArcanoidMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(600, 751);
+            this.ClientSize = new System.Drawing.Size(555, 649);
             this.Controls.Add(this.Rules);
             this.Controls.Add(this.Constructor);
             this.Controls.Add(this.Ok);
@@ -149,8 +149,8 @@ namespace ООП_ШИРЯЄВ
             this.Controls.Add(this.GameRules);
             this.Controls.Add(this.Play);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximumSize = new System.Drawing.Size(624, 811);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(555, 649);
             this.Name = "ArcanoidMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.ArcanoidMenu_Load);
