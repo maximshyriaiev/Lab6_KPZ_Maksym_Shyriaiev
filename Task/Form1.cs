@@ -170,13 +170,11 @@ namespace ООП_ШИРЯЄВ
                     {
                         if (x[i] == "0")
                         {
-                            gameBlocks.blocks.Tag = "Blocks";
-                            gameBlocks.blocks.BackgroundImage = Image.FromFile(@"Images\BlueBlock.png");
+                            SetBlockProperties("Blocks", @"Images\BlueBlock.png");
                         }
                         if (x[i] == "1")
                         {
-                            gameBlocks.blocks.Tag = "HardBlocks";
-                            gameBlocks.blocks.BackgroundImage = Image.FromFile(@"Images\PurpleBlock.png");
+                            SetBlockProperties("HardBlocks", @"Images\PurpleBlock.png");
                         }
 
                         gameArea.AreaView.Controls.Add(gameBlocks.blocks);
@@ -200,7 +198,11 @@ namespace ООП_ШИРЯЄВ
             }
 
         }
-
+        private void SetBlockProperties(string tag, string imagePath)
+        {
+            gameBlocks.blocks.Tag = tag;
+            gameBlocks.blocks.BackgroundImage = Image.FromFile(imagePath);
+        }
         private void RemoveBlocks()
         {
             foreach (Control x in gameArea.AreaView.Controls)
@@ -400,60 +402,38 @@ namespace ООП_ШИРЯЄВ
 
             if (random == 1)
             {
-
-                if (BonusIsLive == true)
-                {
-                    gameBonus = new ScoreBonus();
-                    gameBonus.BonusView = new PictureBox
-                    {
-                        BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
-                        Width = gameBonus.BonusWidth,
-                        Height = gameBonus.BonusHeight,
-                        Top = gameArea.AreaHeight / 2,
-                        Left = gameArea.AreaWidth / 2,
-                        Tag = "ScoreBonus"
-                    };
-                }
-                BonusIsLive = false;
+                CreateBonus(new ScoreBonus(), "ScoreBonus");
             }
-
-            if (random == 2)
+            else if (random == 2)
             {
-                if (BonusIsLive == true)
-                {
-                    gameBonus = new LifeBonus();
-                    gameBonus.BonusView = new PictureBox
-                    {
-                        BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
-                        Width = gameBonus.BonusWidth,
-                        Height = gameBonus.BonusHeight,
-                        Top = gameArea.AreaHeight / 2,
-                        Left = gameArea.AreaWidth / 2,
-                        Tag = "LifeBonus"
-                    };
-                }
-                BonusIsLive = false;
+                CreateBonus(new LifeBonus(), "LifeBonus");
             }
-
-            if (random == 3)
+            else if (random == 3)
             {
-                if (BonusIsLive == true)
-                {
-                    gameBonus = new PlatformBonus();
-                    gameBonus.BonusView = new PictureBox
-                    {
-                        BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
-                        Width = gameBonus.BonusWidth,
-                        Height = gameBonus.BonusHeight,
-                        Top = gameArea.AreaHeight / 2,
-                        Left = gameArea.AreaWidth / 2,
-                        Tag = "PlatformBonus"
-                    };
-                }
-                BonusIsLive = false;
+                CreateBonus(new PlatformBonus(), "PlatformBonus");
             }
-            if (gameBonus != null) gameArea.AreaView.Controls.Add(gameBonus.BonusView);
         }
+
+        private void CreateBonus(Bonus bonus, string tag)
+        {
+            if (BonusIsLive)
+            {
+                gameBonus = bonus;
+                gameBonus.BonusView = new PictureBox
+                {
+                    BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
+                    Width = gameBonus.BonusWidth,
+                    Height = gameBonus.BonusHeight,
+                    Top = gameArea.AreaHeight / 2,
+                    Left = gameArea.AreaWidth / 2,
+                    Tag = tag
+                };
+                BonusIsLive = false;
+                if (gameBonus != null)
+                    gameArea.AreaView.Controls.Add(gameBonus.BonusView);
+            }
+        }
+
 
         private void GameContinue()
         {
