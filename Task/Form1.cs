@@ -260,131 +260,166 @@ namespace ООП_ШИРЯЄВ
 
         public void Collision(object sender, EventArgs e)
         {
-            if (gameBall.BallView.Bounds.IntersectsWith(gamePlatform.PlatformView.Bounds))
-            {
-                gameBall.BallSpeedY = randomBallSpeed.Next(6, 10) * -1;
+            HandleBallPlatformCollision();
 
-                if (gameBall.BallSpeedX < 0)
+            HandleBallBoundaryCollision();
+
+            foreach (Control x in gameArea.AreaView.Controls)
+            {
+                if (x is PictureBox)
                 {
-                    gameBall.BallSpeedX = randomBallSpeed.Next(6, 10) * -1;
-                }
-                else
-                {
-                    gameBall.BallSpeedX = randomBallSpeed.Next(6, 10);
+                    switch ((string)x.Tag)
+                    {
+                        case "Blocks":
+                            HandleBlockCollision(x);
+                            break;
+                        case "HardBlocks":
+                            HandleHardBlockCollision(x);
+                            break;
+                        case "damageBlock":
+                            HandleDamageBlockCollision(x);
+                            break;
+                        case "ScoreBonus":
+                            HandleScoreBonusCollision(x);
+                            break;
+                        case "LifeBonus":
+                            HandleLifeBonusCollision(x);
+                            break;
+                        case "PlatformBonus":
+                            HandlePlatformBonusCollision(x);
+                            break;
+                        case "SpeedBonus":
+                            HandleSpeedBonusCollision(x);
+                            break;
+                    }
                 }
             }
+        }
 
+        private void HandleBallPlatformCollision()
+        {
+            if (gameBall.BallView.Bounds.IntersectsWith(gamePlatform.PlatformView.Bounds))
+            {
+                // Змінити напрямок м'ячика на протилежний по вертикалі
+                gameBall.BallSpeedY = -Math.Abs(gameBall.BallSpeedY);
+
+                // Визначити напрямок м'ячика по горизонталі випадково
+                gameBall.BallSpeedX = randomBallSpeed.Next(6, 10) * (gameBall.BallView.Left < gamePlatform.PlatformView.Left ? -1 : 1);
+            }
+        }
+
+        private void HandleBallBoundaryCollision()
+        {
             if (gameBall.BallView.Left < 0 || gameBall.BallView.Left > gameArea.AreaWidth - gameBall.BallView.Width)
             {
+                // Змінити напрямок м'ячика на протилежний по горизонталі
                 gameBall.BallSpeedX = -gameBall.BallSpeedX;
             }
             if (gameBall.BallView.Top < 0 || gameBall.BallView.Top > gameArea.AreaHeight)
             {
+                // Змінити напрямок м'ячика на протилежний по вертикалі
                 gameBall.BallSpeedY = -gameBall.BallSpeedY;
             }
+        }
 
-            foreach (Control x in gameArea.AreaView.Controls)
+        private void HandleBlockCollision(Control block)
+        {
+            if (gameBall.BallView.Bounds.IntersectsWith(block.Bounds))
             {
-                if (x is PictureBox && (string)x.Tag == "Blocks")
-                {
-                    if (gameBall.BallView.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        Score += 10;
-                        gameBall.BallSpeedY = -gameBall.BallSpeedY;
-                        gameArea.AreaView.Controls.Remove(x);
-                        GenerateBonus();
-                    }
-                }
-
-                if (x is PictureBox && (string)x.Tag == "HardBlocks")
-                {
-                    if (gameBall.BallView.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        gameBall.BallSpeedY = -gameBall.BallSpeedY;
-                        x.BackgroundImage = Image.FromFile(@"Images\PurpleBlockDestroyed.png");
-                        x.Tag = "damageBlock";
-                    }
-                }
-                else if (x is PictureBox && (string)x.Tag == "damageBlock")
-                {
-                    if (gameBall.BallView.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        Score += 10;
-                        gameBall.BallSpeedY = -gameBall.BallSpeedY;
-                        gameArea.AreaView.Controls.Remove(x);
-                    }
-                }
-
-                if (x is PictureBox && (string)x.Tag == "ScoreBonus")
-                {
-                    if (x.Top > gameArea.AreaView.Height)
-                    {
-                        gameArea.AreaView.Controls.Remove(x);
-                        BonusIsLive = true;
-                    }
-
-                    if (gamePlatform.PlatformView.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        Score += ((ScoreBonus)gameBonus).ExtraScore;
-                        gameArea.AreaView.Controls.Remove(x);
-                        BonusIsLive = true;
-                    }
-                }
-
-                if (x is PictureBox && (string)x.Tag == "LifeBonus")
-                {
-                    if (x.Top > gameArea.AreaView.Height)
-                    {
-                        gameArea.AreaView.Controls.Remove(x);
-                        BonusIsLive = true;
-                    }
-
-                    if (gamePlatform.PlatformView.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        if (Lives < 5)
-                        {
-                            Lives += ((LifeBonus)gameBonus).ExtraLife;
-                        }
-                        gameArea.AreaView.Controls.Remove(x);
-                        BonusIsLive = true;
-                    }
-                    
-                }
-               
-
-                if (x is PictureBox && (string)x.Tag == "PlatformBonus")
-                {
-                    if (x.Top > gameArea.AreaView.Height)
-                    {
-                        gameArea.AreaView.Controls.Remove(x);
-                        BonusIsLive = true;
-                    }
-
-                    if (gamePlatform.PlatformView.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        gamePlatform.PlatformView.Width = gamePlatform.PlatformWidth + ((PlatformBonus)gameBonus).ExtraWidth;
-                        gamePlatform.PlatformView.BackgroundImage = Image.FromFile(@"Images\BigPlatform.png");
-
-                        gameArea.AreaView.Controls.Remove(x);
-                        BonusIsLive = true;
-
-                        timeBonus.Interval = 10000;
-
-                        timeBonus.Tick += TimeBonus_Tick;
-                        timeBonus.Start();
-                    }
-                    if (x is PictureBox && (string)x.Tag == "SpeedBonus")
-{
-    if (x.Top > gameArea.AreaView.Height)
-    {
-        gameArea.AreaView.Controls.Remove(x);
-        BonusIsLive = true;
-    }
-}
-
-                }
+                Score += 10;
+                gameBall.BallSpeedY *= -1;
+                gameArea.AreaView.Controls.Remove(block);
+                GenerateBonus();
             }
         }
+
+        private void HandleHardBlockCollision(Control hardBlock)
+        {
+            if (gameBall.BallView.Bounds.IntersectsWith(hardBlock.Bounds))
+            {
+                gameBall.BallSpeedY *= -1; // Зміна напрямку на протилежний
+                hardBlock.BackgroundImage = Image.FromFile(@"Images\PurpleBlockDestroyed.png");
+                hardBlock.Tag = "damageBlock";
+            }
+        }
+
+        private void HandleDamageBlockCollision(Control damageBlock)
+        {
+            if (gameBall.BallView.Bounds.IntersectsWith(damageBlock.Bounds))
+            {
+                Score += 10;
+                gameBall.BallSpeedY = -gameBall.BallSpeedY;
+                gameArea.AreaView.Controls.Remove(damageBlock);
+            }
+        }
+
+        private void HandleScoreBonusCollision(Control scoreBonus)
+        {
+            if (scoreBonus.Top > gameArea.AreaView.Height)
+            {
+                gameArea.AreaView.Controls.Remove(scoreBonus);
+                BonusIsLive = true;
+            }
+
+            if (gamePlatform.PlatformView.Bounds.IntersectsWith(scoreBonus.Bounds))
+            {
+                Score += ((ScoreBonus)gameBonus).ExtraScore;
+                gameArea.AreaView.Controls.Remove(scoreBonus);
+                BonusIsLive = true;
+            }
+        }
+
+        private void HandleLifeBonusCollision(Control lifeBonus)
+        {
+            if (lifeBonus.Top > gameArea.AreaView.Height)
+            {
+                gameArea.AreaView.Controls.Remove(lifeBonus);
+                BonusIsLive = true;
+            }
+
+            if (gamePlatform.PlatformView.Bounds.IntersectsWith(lifeBonus.Bounds))
+            {
+                if (Lives < 5)
+                {
+                    Lives += ((LifeBonus)gameBonus).ExtraLife;
+                }
+                gameArea.AreaView.Controls.Remove(lifeBonus);
+                BonusIsLive = true;
+            }
+        }
+
+        private void HandlePlatformBonusCollision(Control platformBonus)
+        {
+            if (platformBonus.Top > gameArea.AreaView.Height)
+            {
+                gameArea.AreaView.Controls.Remove(platformBonus);
+                BonusIsLive = true;
+            }
+
+            if (gamePlatform.PlatformView.Bounds.IntersectsWith(platformBonus.Bounds))
+            {
+                gamePlatform.PlatformView.Width = gamePlatform.PlatformWidth + ((PlatformBonus)gameBonus).ExtraWidth;
+                gamePlatform.PlatformView.BackgroundImage = Image.FromFile(@"Images\BigPlatform.png");
+
+                gameArea.AreaView.Controls.Remove(platformBonus);
+                BonusIsLive = true;
+
+                timeBonus.Interval = 10000;
+                timeBonus.Tick += TimeBonus_Tick;
+                timeBonus.Start();
+            }
+        }
+
+        private void HandleSpeedBonusCollision(Control speedBonus)
+        {
+            if (speedBonus.Top > gameArea.AreaView.Height)
+            {
+                gameArea.AreaView.Controls.Remove(speedBonus);
+                BonusIsLive = true;
+            }
+        }
+
+
 
         private void TimeBonus_Tick(object sender, EventArgs e)
         {
@@ -396,63 +431,66 @@ namespace ООП_ШИРЯЄВ
         private void GenerateBonus()
         {
             Random randBonus = new Random();
-            int random = randBonus.Next(1, 5);
+            int random = randBonus.Next(1, 4);
 
-            if (random == 1)
+            switch (random)
             {
-
-                if (BonusIsLive == true)
-                {
-                    gameBonus = new ScoreBonus();
-                    gameBonus.BonusView = new PictureBox
+                case 1:
+                    if (BonusIsLive)
                     {
-                        BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
-                        Width = gameBonus.BonusWidth,
-                        Height = gameBonus.BonusHeight,
-                        Top = gameArea.AreaHeight / 2,
-                        Left = gameArea.AreaWidth / 2,
-                        Tag = "ScoreBonus"
-                    };
-                }
-                BonusIsLive = false;
+                        gameBonus = new ScoreBonus();
+                        gameBonus.BonusView = new PictureBox
+                        {
+                            BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
+                            Width = gameBonus.BonusWidth,
+                            Height = gameBonus.BonusHeight,
+                            Top = gameArea.AreaHeight / 2,
+                            Left = gameArea.AreaWidth / 2,
+                            Tag = "ScoreBonus"
+                        };
+                        BonusIsLive = false;
+                    }
+                    break;
+                case 2:
+                    if (BonusIsLive)
+                    {
+                        gameBonus = new LifeBonus();
+                        gameBonus.BonusView = new PictureBox
+                        {
+                            BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
+                            Width = gameBonus.BonusWidth,
+                            Height = gameBonus.BonusHeight,
+                            Top = gameArea.AreaHeight / 2,
+                            Left = gameArea.AreaWidth / 2,
+                            Tag = "LifeBonus"
+                        };
+                        BonusIsLive = false;
+                    }
+                    break;
+                case 3:
+                    if (BonusIsLive)
+                    {
+                        gameBonus = new PlatformBonus();
+                        gameBonus.BonusView = new PictureBox
+                        {
+                            BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
+                            Width = gameBonus.BonusWidth,
+                            Height = gameBonus.BonusHeight,
+                            Top = gameArea.AreaHeight / 2,
+                            Left = gameArea.AreaWidth / 2,
+                            Tag = "PlatformBonus"
+                        };
+                        BonusIsLive = false;
+                    }
+                    break;
+                default:
+                    break;
             }
 
-            if (random == 2)
+            if (gameBonus != null)
             {
-                if (BonusIsLive == true)
-                {
-                    gameBonus = new LifeBonus();
-                    gameBonus.BonusView = new PictureBox
-                    {
-                        BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
-                        Width = gameBonus.BonusWidth,
-                        Height = gameBonus.BonusHeight,
-                        Top = gameArea.AreaHeight / 2,
-                        Left = gameArea.AreaWidth / 2,
-                        Tag = "LifeBonus"
-                    };
-                }
-                BonusIsLive = false;
+                gameArea.AreaView.Controls.Add(gameBonus.BonusView);
             }
-
-            if (random == 3)
-            {
-                if (BonusIsLive == true)
-                {
-                    gameBonus = new PlatformBonus();
-                    gameBonus.BonusView = new PictureBox
-                    {
-                        BackgroundImage = Image.FromFile(gameBonus.BonusBackGround),
-                        Width = gameBonus.BonusWidth,
-                        Height = gameBonus.BonusHeight,
-                        Top = gameArea.AreaHeight / 2,
-                        Left = gameArea.AreaWidth / 2,
-                        Tag = "PlatformBonus"
-                    };
-                }
-                BonusIsLive = false;
-            }
-            if (gameBonus != null) gameArea.AreaView.Controls.Add(gameBonus.BonusView);
         }
 
         private void GameContinue()

@@ -1,0 +1,13 @@
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ЛАБ6 Ширяєв.csproj.AssemblyReference.cache
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ЛАБ6 Ширяєв.csproj.SuggestedBindingRedirects.cache
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.ArcanoidMenu.resources
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.MainForm.resources
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ООП_ШИРЯЄВ.LevelConstructor.resources
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой_проект_ООП.Properties.Resources.resources
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ЛАБ6 Ширяєв.csproj.GenerateResource.cache
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\ЛАБ6 Ширяєв.csproj.CoreCompileInputs.cache
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой проект ООП.exe
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\obj\Debug\Курсовой проект ООП.pdb
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.exe.config
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.exe
+D:\PullRequest1\Lab6_KPZ_Maksym_Shyriaiev\Task\bin\Debug\Курсовой проект ООП.pdb
